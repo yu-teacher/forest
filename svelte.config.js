@@ -6,11 +6,16 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
-    // GitHub Pages를 위한 base path 설정
-    paths: {
-      base: process.env.NODE_ENV === 'production' ? '/forest' : ''
-    }
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: 'index.html',
+			precompress: false,
+			strict: false
+		}),
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? '/forest' : ''
+		}
 	}
 };
 
