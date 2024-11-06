@@ -2,32 +2,43 @@
   import Header from "$lib/components/Header.svelte";
   const staffData = [
     {
-      photo:
-        "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
-      name: "성명",
-      position: "직책",
-      description: "반가워요잇!",
+      name: "김 욱",
+      position: "배재대학교 총장",
+      description: `배재대학교 아트앤웹툰학부 학생여러분!
+
+가을이 저물어가고 어느 덧 겨울 초입에 다다랐습니다. 열심히 달려온 한 해의 마침표를 찍는 이 시기에 41번째 졸업전시회를 개최한다고 하니 진심으로 축하드립니다. 배재대학교의 역사와 함께한 아트앤웹툰학부는 그 동안 교수님과 학생 여러분이 혼연일체가 되어 각종 공모전에서 수상을 했을 뿐 아니라 미술 관련 분야의 우수한 인재 및 지도자를 배출하고 있어 중부권 미술교육의 명문학과로 성장해왔습니다.
+
+이번 졸업전시회는 우리 학생들이 지난 4년간 대학 생활 동안 뜨거운 열정을 쏟아 거둔 땀의 결실이라는 점에서 더욱 의미가 있을 것입니다. 무더운 날씨와 학업과 병행하며 분주한 일정 속에 몸과 마음이 지친 상황에서도 열심히 전시를 준비하며 남들보다 바쁜 한 해를 보냈을 배재대학교 아트앤웹툰학부 학생들에게 마음 깊이 찬사를 보냅니다.
+
+여러분은 그동안의 학업과 대외활동을 통해 창의적 실기 능력은 물론 학문적 깊이를 체득하고 이해하는 시간을 보냈습니다. 그 과정에서 실패를 두려워하지 않는 도전 정신을 키웠습니다. 저는 이러한 경험들이 분명 여러분 자신의 가치를 발견하고, 꿈을 실현하는 자양분이 될 것이라 확신합니다. 또한, 여러분의 앞날에 희망찬 미래를 여는 뜻깊은 출발점이 될 것입니다.
+
+이번 졸업전시회는 배재대학교 아트앤웹툰학부 디자인전공의 교육 비전을 알리는 창구이자 우리나라 디자인 산업의 미래 단면을 조망할 수 있는 행사가 될 것입니다. 나아가 이번 전시회를 통하여 자랑스러운 배재 미술의 품격을 드높이는 계기가 될 수 있기를 기원합니다.
+
+자랑스러운 배재대학교 아트앤웹툰 디자인 전공 졸업전시회 참가자 여러분!
+
+AI, IOT, 빅데이터 등 이성적 영역이 주류를 형성하게 될 4차 산업혁명 시대에 있어 디자인 영역은 앞으로 초개인화되는 개개인의 감성을 인문학적으로 이해하는 것이 핵심이 되면서 감성적 영역으로 부상하고 있습니다. 의미 있는 영역을 전공하는 여러분들은 자랑스러운 '배재의 얼굴'이자 '우리나라의 미래' 입니다.다시 한 번 제 41회 아트앤웹툰학부 디자인 전공 졸업전시회를 축하드리며, 녹록치 않은 상황에서도 이 아름다운 작품을 빚어내기까지 불철주야로 노력을 아끼지 않은 학생여러분과 여러분들을 위하여 헌신적인 지도를 해주신 학과 소속 교수님들에게 심심한 존경의 말씀을 전합니다.`,
     },
     {
-      photo:
-        "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
-      name: "성명",
-      position: "직책",
-      description: "반가워요잇!",
+      name: "김 세 종",
+      position: "아트앤웹툰학부 학부장",
+      description: `4년간의 결실을 빛낼 수 있는 배재대학교 아트앤웹툰학부 여러분들의 졸업전시회를 축하드립니다.
+
+유난히도 무덥고 힘겨웠던 여름을 잘 이겨내고 지난 4년간 갈고닦은 예술의 혼이 담긴 결과물을 전시하게 된 학부생 여러분의 노력에 박수를 보냅니다.
+
+이번 졸업전시는 향후 대한민국 디자인계의 미래를 이끌어나갈 수 있는 훌륭한 예술인으로 성장할 수 있는 첫 걸음이 될 것입니다. 또한 앞으로 펼쳐질 다양하고 폭넓은 활동들로 문화 예술 발전에 기여할 수 있는 인재로 성장하기를 응원합니다. 졸업과 동시에 정들었던 학교를 떠나지만 여러분들의 꿈을 펼칠 사회라는 또 다른 시작이 찾아올 것입니다. 항상 지금과 같이 긍정적인 마음으로 도전한다면 여러분들의 미래는 꽃길만 펼쳐질 것이라 생각합니다.
+
+끝으로 우리 아트앤웹툰학부 교수진을 믿고 4년이라는 긴 시간 동안 학생들에게 좋은 길을 안내할 수 도록 아낌없는 믿음과 지지를 보내주셨던 학부모님께 감사의 말씀 올리겠습니다.`,
     },
     {
-      photo:
-        "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
-      name: "성명",
-      position: "직책",
-      description: "반가워요잇!",
-    },
-    {
-      photo:
-        "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
-      name: "성명",
-      position: "직책",
-      description: "반가워요잇!",
+      name: "최 규 한",
+      position: "디자인 전공 주임 교수",
+      description: `배재대학교 디자인전공 졸업전시회를 개최하게 되어 매우 기쁘게 생각하며, 졸업을 진심으로 축하합니다. 특히 이번 졸업전시회는 과제전을 겸하는 관계로 디자인전공 모든 구성원이 참여하게 되어 그 의미가 남다르다고 생각합니다.
+
+모든 분야가 그렇지만 디자인은 강한 실행력과 디자이너의 의지 없이는 생존하기 힘든 전문분야입니다. 이번 졸업 전시를 통해서 많은 것을 느끼고 자신의 실력을 향상시키는 계기가 되었기를 바라며, 지도에 힘써주신 유재상, 정상목 교수님께도 깊은 감사의 말씀을 드립니다.
+
+여러분이 졸업을 앞둔 이 시점에 어떤 말을 해야 할까 고민을 하다가, 제가 여러분 나이 때에 겪은 작은 경험을 소개하고자 합니다. 미국에서 교환학생으로 재학 중에 제 생각의 큰 전환점이 되어준 계기가 있었는데, 켄두라는 친구를 만난 것입니다. 디자인 공모전에 도전했다가 떨어져 실의에 빠져있을 때 켄두는 제게 말했습니다. "Hey, Kyu. You didn't fail. You are still winner. You know why? You tried!" 이 말은 작지만 커다란 생각의 차이가 있다고 생각합니다. 도전했다는 것이 바로 이긴 것이라고 생각하기 때문에 켄두에게는 실패와 두려움이 없습니다.
+
+현재 여러분은 졸업 후의 진로 및 취직활동으로 인해 큰 부담과 어려움을 느끼고 있을 것 입니다. '도전한 것이 바로 이긴 것' 이라고 생각한다면 조금이나마, 무거운 마음의 부담을 떨쳐버리고 용기 있게 도전할 수 있지 않을까 싶습니다. 내가 정말 하고 싶은 것, 내가 정말 좋아하는 것, 내가 잘하는 것이 무엇인지 곰곰이 생각해보시고, 자신의 미래를 향해 도전하시기 바랍니다. 여러분의 안녕과 건승을 진심으로 기원합니다. 감사합니다.`,
     },
   ];
 </script>
@@ -35,25 +46,21 @@
 <div class="relative w-full min-h-screen bg-black text-white overflow-hidden">
   <Header />
 
-  <div class="w-full bg-black text-white px-12">
+  <div class="w-full bg-black text-white px-6">
     <div class="container mx-auto max-w-[800px] mt-8">
-      <div class="flex flex-col gap-16">
+      <div class="flex flex-col space-y-24">
         {#each staffData as staff}
-          <div class="flex gap-4 items-start">
-            <div class="flex flex-col items-center gap-2">
-              <img
-                src={staff.photo}
-                alt={staff.name}
-                class="w-32 h-40 bg-white object-cover"
-              />
-              <p class="text-sm">{staff.name}</p>
-              <p class="text-xs text-gray-400">{staff.position}</p>
-            </div>
-            <div class="w-96 h-48 bg-white p-4 text-black">
-              {staff.description}
-            </div>
+        <div class="flex flex-col gap-6">
+          <div class="flex flex-col items-start">
+            <p class="text-lg font-bold mb-1">{staff.name}</p>
+            <p class="text-xs text-gray-400">{staff.position}</p>
+            <hr class="border-white w-full my-4">  <!-- 흰색 선 추가 -->
           </div>
-        {/each}
+          <div class="w-full whitespace-pre-line text-xs leading-relaxed text-white">
+            {staff.description}
+          </div>
+        </div>
+      {/each}
       </div>
     </div>
   </div>

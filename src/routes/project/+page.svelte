@@ -14,7 +14,7 @@
   const individualProjects = [
     {
       photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
-      name: "홍길동",
+      name: "박준서",
       email: "example1@gmail.com",
       phone: "010-1234-5678",
       projects: [
@@ -26,7 +26,7 @@
     },
     {
       photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
-      name: "김철수",
+      name: "윤은파",
       email: "example2@gmail.com",
       phone: "010-2345-6789",
       projects: [
@@ -37,7 +37,7 @@
     },
     {
       photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
-      name: "이영희",
+      name: "이다빈",
       email: "example3@gmail.com",
       phone: "010-3456-7890",
       projects: [
@@ -50,7 +50,7 @@
     },
     {
       photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
-      name: "박민수",
+      name: "임수한",
       email: "example4@gmail.com",
       phone: "010-4567-8901",
       projects: [
@@ -60,9 +60,9 @@
     },
     {
       photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
-      name: "최지은",
-      email: "example5@gmail.com",
-      phone: "010-5678-9012",
+      name: "최준호",
+      email: "masa2861@naver.com",
+      phone: "010-2657-1608",
       projects: [
         { image: "https://picsum.photos/340/440" },
         { image: "https://picsum.photos/440/340" },
@@ -103,7 +103,7 @@
   <div class="w-full px-4 py-8">
     <!-- Team Projects -->
     <section class="mb-16">
-      <h2 class="text-xl font-medium mb-6 px-2">TEAM PROJECT</h2>
+      <h2 class="text-xl font-medium mb-6">TEAM PROJECT</h2>
       <div class="flex gap-4 overflow-x-auto no-scrollbar snap-x snap-mandatory">
         {#each teamProjects as project}
           <div class="flex-shrink-0 w-[280px] bg-white snap-center" style="aspect-ratio: {project.image.split('/')[3]}/{project.image.split('/')[4]}">
@@ -119,7 +119,7 @@
 
     <!-- Individual Projects -->
     <section>
-      <h2 class="text-xl font-medium mb-8 px-2">INDIVIDUAL PROJECT</h2>
+      <h2 class="text-xl font-medium mb-8">INDIVIDUAL PROJECT</h2>
       <div class="space-y-16">
         {#each individualProjects as person}
           <div class="space-y-6">
@@ -144,7 +144,7 @@
               on:touchmove={handleTouchMove}
               on:touchend={(e) => handleTouchEnd(e, e.currentTarget)}
             >
-              <div class="flex gap-4 px-4">
+              <div class="flex gap-4">
                 {#each person.projects as project}
                   <div class="flex-shrink-0 w-[280px] bg-white snap-center" style="aspect-ratio: {project.image.split('/')[3]}/{project.image.split('/')[4]}">
                     <img 
