@@ -19,8 +19,14 @@ jobs:
       
       - uses: actions/setup-node@v3
         with:
-          node-version: 18 
+          node-version: 18
           cache: 'npm'
+          
+      - name: Clear npm cache and remove dependencies
+        run: |
+          npm cache clean --force
+          rm -rf node_modules
+          rm -f package-lock.json
           
       - name: Install dependencies
         run: npm install
