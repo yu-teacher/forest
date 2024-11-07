@@ -43,10 +43,10 @@ AI, IOT, 빅데이터 등 이성적 영역이 주류를 형성하게 될 4차 �
   ];
 </script>
 
-<div class="relative w-full min-h-screen bg-black text-white overflow-hidden">
+<div class="relative w-full min-h-screen bg-[#080504] text-white overflow-hidden">
   <Header />
 
-  <div class="w-full bg-black text-white px-6">
+  <div class="w-full bg-[#080504] text-white px-6 mb-24">
     <div class="container mx-auto max-w-[800px] mt-8">
       <div class="flex flex-col space-y-24">
         {#each staffData as staff}
@@ -65,3 +65,4 @@ AI, IOT, 빅데이터 등 이성적 영역이 주류를 형성하게 될 4차 �
     </div>
   </div>
 </div>
+

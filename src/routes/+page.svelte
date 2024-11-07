@@ -4,13 +4,13 @@
   import back from '$lib/img/back.png';
 </script>
 
-<div class="relative w-full min-h-screen bg-black text-white overflow-hidden">
+<div class="relative w-full min-h-screen bg-[#080504] text-white overflow-hidden">
   <Header />
 
   <!-- 메인 컨테이너: 최대 너비 제한 및 패딩 최적화 -->
   <div class="container mx-auto max-w-[640px] px-4 pb-16">
     <!-- 이미지 컨테이너: 비율 유지 및 정확한 중앙 정렬 -->
-    <div class="relative h-[500px] bg-black flex items-center justify-center">
+    <div class="relative h-[500px] bg-[#080504] flex items-center justify-center">
       <img 
         src={back} 
         alt="" 

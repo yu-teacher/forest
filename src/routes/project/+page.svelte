@@ -97,7 +97,7 @@
   }
 </script>
 
-<div class="relative w-full min-h-screen bg-black text-white overflow-hidden">
+<div class="relative w-full min-h-screen bg-[#080504] text-white overflow-hidden">
   <Header />
   
   <div class="w-full px-4 py-8">
