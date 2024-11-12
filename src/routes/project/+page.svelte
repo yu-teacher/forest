@@ -1,73 +1,93 @@
 <script lang="ts">
   import Header from '$lib/components/Header.svelte';
-  let touchStartX: number;
-  let touchEndX: number;
+  import JunseoPark from '$lib/img/JunseoPark.jpg';
+  import JunseoPark1 from '$lib/img/JunseoPark-1.jpg';
+  import JunseoPark2 from '$lib/img/JunseoPark-2.jpg';
+  import JunseoPark3 from '$lib/img/JunseoPark-3.jpg';
+  import EunpaYoon from '$lib/img/EunpaYoon.jpg';
+  import EunpaYoon1 from '$lib/img/EunpaYoon-1.jpg';
+  import EunpaYoon2 from '$lib/img/EunpaYoon-2.jpg';
+  import EunpaYoon3 from '$lib/img/EunpaYoon-3.jpg';
+  import DabinLee from '$lib/img/DabinLee.jpg';
+  import DabinLee1 from '$lib/img/DabinLee-1.jpg';
+  import DabinLee2 from '$lib/img/DabinLee-2.jpg';
+  import DabinLee3 from '$lib/img/DabinLee-3.jpg';
+  import SoohanLim from '$lib/img/SoohanLim.jpg';
+  import SoohanLim1 from '$lib/img/SoohanLim-1.jpg';
+  import SoohanLim2 from '$lib/img/SoohanLim-2.jpg';
+  import SoohanLim3 from '$lib/img/SoohanLim-3.jpg';
+  import JunhoChoi from '$lib/img/JunhoChoi.jpg';
+  import JunhoChoi1 from '$lib/img/JunhoChoi-1.jpg';
+  import JunhoChoi2 from '$lib/img/JunhoChoi-2.jpg';
+  import all1 from '$lib/img/all_1.jpg';
+  import all2 from '$lib/img/all_2.jpg';
+  import all3 from '$lib/img/all_3.jpg';
+
+  // 터치 이벤트 위치 변수 초기값 설정
+  let touchStartX: number = 0;
+  let touchEndX: number = 0;
 
   // 팀 프로젝트 데이터
   const teamProjects = [
-    { image: "https://picsum.photos/300/200", title: "Team Project 1" },
-    { image: "https://picsum.photos/400/200", title: "Team Project 2" },
-    { image: "https://picsum.photos/300/300", title: "Team Project 3" }
+    { image: all1, title: "Team Project 1" },
+    { image: all2, title: "Team Project 2" },
+    { image: all3, title: "Team Project 3" }
   ];
 
   // 개인 프로젝트 데이터
   const individualProjects = [
     {
-      photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
+      photo: JunseoPark,
       name: "박준서",
-      email: "example1@gmail.com",
-      phone: "010-1234-5678",
+      email: "gwonho1129@gmail.com",
+      phone: "010-3221-7659",
       projects: [
-        { image: "https://picsum.photos/300/400" },
-        { image: "https://picsum.photos/400/300" },
-        { image: "https://picsum.photos/300/300" },
-        { image: "https://picsum.photos/400/400" }
+        { image: JunseoPark1 },
+        { image: JunseoPark2 },
+        { image: JunseoPark3 },
       ]
     },
     {
-      photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
+      photo: EunpaYoon,
       name: "윤은파",
-      email: "example2@gmail.com",
-      phone: "010-2345-6789",
+      email: "yooneunpa@naver.com",
+      phone: "010-4552-4207",
       projects: [
-        { image: "https://picsum.photos/350/450" },
-        { image: "https://picsum.photos/450/350" },
-        { image: "https://picsum.photos/350/350" }
+        { image: EunpaYoon1 },
+        { image: EunpaYoon2 },
+        { image: EunpaYoon3 }
       ]
     },
     {
-      photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
+      photo: DabinLee,
       name: "이다빈",
-      email: "example3@gmail.com",
-      phone: "010-3456-7890",
+      email: "davinchi_@naver.com",
+      phone: "010-7941-1220",
       projects: [
-        { image: "https://picsum.photos/320/420" },
-        { image: "https://picsum.photos/420/320" },
-        { image: "https://picsum.photos/320/320" },
-        { image: "https://picsum.photos/420/420" },
-        { image: "https://picsum.photos/380/420" }
+        { image: DabinLee1 },
+        { image: DabinLee2 },
+        { image: DabinLee3 }
       ]
     },
     {
-      photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
+      photo: SoohanLim,
       name: "임수한",
-      email: "example4@gmail.com",
-      phone: "010-4567-8901",
+      email: "hanbaby1204@naver.com",
+      phone: "010-6365-1806",
       projects: [
-        { image: "https://picsum.photos/380/480" },
-        { image: "https://picsum.photos/480/380" }
+        { image: SoohanLim1 },
+        { image: SoohanLim2 },
+        { image: SoohanLim3 }
       ]
     },
     {
-      photo: "https://t1.daumcdn.net/tistory_admin/static/images/openGraph/opengraph.png",
+      photo: JunhoChoi,
       name: "최준호",
       email: "masa2861@naver.com",
       phone: "010-2657-1608",
       projects: [
-        { image: "https://picsum.photos/340/440" },
-        { image: "https://picsum.photos/440/340" },
-        { image: "https://picsum.photos/340/340" },
-        { image: "https://picsum.photos/440/440" }
+        { image: JunhoChoi1 },
+        { image: JunhoChoi2 }
       ]
     }
   ];
@@ -97,7 +117,8 @@
   }
 </script>
 
-<div class="relative w-full min-h-screen bg-[#080504] text-white overflow-hidden">
+
+<div class="relative w-full min-h-screen bg-[#080504] text-white overflow-hidden pb-16">
   <Header />
   
   <div class="w-full px-4 py-8">

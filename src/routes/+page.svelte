@@ -63,7 +63,7 @@
 
         <div class="space-y-2">
           <p class="text-base font-medium">프로젝트 참여자</p>
-          <p class="text-sm opacity-90">곽준서 윤은파 이다빈 임수한 최준호</p>
+          <p class="text-sm opacity-90">박준서 윤은파 이다빈 임수한 최준호</p>
         </div>
       </section>
     </div>
